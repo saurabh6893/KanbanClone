@@ -4,9 +4,9 @@ const Header = () => {
     const [leftmenu, setLeftMenu] = useState<boolean>(false)
     return (
 
-        <header className='flex justify-between dark:text-white items-center h-20'>
+        <header className='flex justify-between dark:text-white items-center h-20 border-2 border-gray-300 border-bottom-0'>
             {/* leftTop */}
-            <div className='flex flex-row items-center justify-between space-x-2 w-auto md:space-m-4 border-2 border-gray-300 border-bottom-0'>
+            <div className='flex flex-row items-center justify-between space-x-2 w-auto md:space-m-4 border-r border-gray-300 '>
                 <div className='flex flex-row items-center justify-around'>
 
                     <svg className='h-10 w-10 m-5' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -30,21 +30,39 @@ const Header = () => {
                 </div>
 
             </div>
-
+            {/* border-2 border-red-500 border-bottom-0 */}
 
             {/* MID */}
-            <div className="border-2 border-red-500 border-bottom-0 flex flex-row justify-between items-center w-9/10 mx-auto">
-                <div className='px-16 mr-60 flex items-center'>
-                    <svg className='w-5 h-5 text-gray-500 inline-svg' width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.3417 18.25C15.1512 18.25 19.0501 14.3512 19.0501 9.54168C19.0501 4.7322 15.1512 0.833344 10.3417 0.833344C5.53225 0.833344 1.63339 4.7322 1.63339 9.54168C1.63339 14.3512 5.53225 18.25 10.3417 18.25Z" stroke="#787486" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <div className="flex flex-row justify-between items-center w-9/10 mx-auto">
+                <div className="relative mr-96">
+                    <svg
+                        className="absolute left-3 top-3 text-gray-500 h-5 w-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 2 20 20"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    >
+                        <circle cx="9" cy="9" r="6" />
+                        <path d="M20 20L15 15" />
                     </svg>
-
-                    <input type="text" className='px-10 py-2 rounded-sm ' />
+                    <input
+                        type="text"
+                        placeholder="Search for anything..."
+                        className="pl-10 pr-12 py-2 rounded-sm w-full bg-gray-100 placeholder-gray-500 placeholder-opacity-100 text-base font-normal"
+                    />
                 </div>
+
+
+
+
+
 
                 {/* boundary */}
 
-                <div className='flex-grow flex items-center justify-end ml-60'>
+                <div className='flex-grow flex items-center justify-end ml-96'>
                     <svg width="120" height="24" viewBox="0 0 120 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M108.02 2.91C104.71 2.91 102.02 5.6 102.02 8.91V11.8C102.02 12.41 101.76 13.34 101.45 13.86L100.3 15.77C99.59 16.95 100.08 18.26 101.38 18.7C105.69 20.14 110.34 20.14 114.65 18.7C115.86 18.3 116.39 16.87 115.73 15.77L114.58 13.86C114.28 13.34 114.02 12.41 114.02 11.8V8.91C114.02 5.61 111.32 2.91 108.02 2.91Z" stroke="#787486" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
                         <path d="M109.87 3.2C109.56 3.11 109.24 3.04 108.91 3C107.95 2.88 107.03 2.95 106.17 3.2C106.46 2.46 107.18 1.94 108.02 1.94C108.86 1.94 109.58 2.46 109.87 3.2Z" stroke="#787486" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
