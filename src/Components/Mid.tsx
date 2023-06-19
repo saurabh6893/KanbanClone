@@ -5,7 +5,7 @@ import MainBody from './MainBody'
 const Mid = () => {
   return (
     <>
-      <div className='flex flex-row w-screen h-screen items-center justify-between '>
+      <div className='flex flex-row w-full h-screen items-center justify-between '>
         <SideBar />
         <MainBody />
       </div>

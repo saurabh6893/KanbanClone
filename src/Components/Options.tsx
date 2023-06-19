@@ -2,7 +2,7 @@ import React from 'react'
 
 const Options = () => {
     return (
-        <div className="flex flex-col justify-start absolute top-5 left-2 border-b pr-28 border-gray-400 pb-6">
+        <div className="flex flex-col justify-start absolute top-2 left-2 border-b pr-28 border-gray-400 pb-6">
 
             <div className="flex flex-row justify-start items-center m-5 ">
                 <div className="w-10">

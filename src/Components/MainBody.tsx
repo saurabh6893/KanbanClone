@@ -1,9 +1,14 @@
 import React from 'react'
+import MainTop from './MainTop'
+import CardBody from './CardBody'
 
 const MainBody = () => {
   return (
-    <div>MainBody</div>
+    <div className='relative flex flex-col justify-between items-center w-full h-full'>
+      <MainTop />
+      <CardBody />
+    </div>
   )
 }
 
-export default MainBody
+export default MainBody 
